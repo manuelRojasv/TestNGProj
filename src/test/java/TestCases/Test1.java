@@ -20,13 +20,13 @@ public class Test1 {
  @BeforeClass
 
     public void iniConf(){
-        WebDriverManager.edgedriver().setup();
-        driver = new EdgeDriver();
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
     }
 
  @AfterClass
     public void closeSession() throws InterruptedException {
-     Thread.sleep(5000);
+     Thread.sleep(2000);
      driver.close();
      driver.quit();
  }
